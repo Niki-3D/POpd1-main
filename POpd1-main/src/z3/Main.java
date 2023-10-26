@@ -7,8 +7,8 @@ public class Main {
 
         assert smok.getPunktyZycia() == 1000;
         assert smok instanceof Postac;
-,
-        
+
+
         Rycerz rycerz = new Rycerz(500, 50);
 
         assert rycerz.getPunktyZycia() == 500;
