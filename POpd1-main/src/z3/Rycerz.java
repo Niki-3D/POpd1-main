@@ -1,22 +1,21 @@
 package z3;
 
-public class Rycerz implements Postac, Walczaca {
-    private int punktyZycia;
+public class Rycerz extends Postac implements Walczaca {
     private int sila;
 
     public Rycerz(int punktyZycia, int sila) {
-        this.punktyZycia = punktyZycia;
+        super(punktyZycia);
         this.sila = sila;
-    }
-
-    public int getPunktyZycia() {
-        return punktyZycia;
     }
 
     public int getSila() {
         return sila;
     }
 
+    @Override
     public void atakuj(Postac przeciwnik) {
+        przeciwnik.otrzymajObrazenia(sila);
     }
 }
+
+

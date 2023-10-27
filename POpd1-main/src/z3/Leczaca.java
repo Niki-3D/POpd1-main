@@ -1,5 +1,5 @@
 package z3;
 
 public interface Leczaca {
-    void wylecz(Postac cel);
+    void wylecz(Postac pacjent);
 }

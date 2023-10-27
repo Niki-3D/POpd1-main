@@ -1,16 +1,14 @@
 package z3;
 
-public class Smok implements Postac {
-    private int punktyZycia;
-
+public class Smok extends Postac implements Walczaca {
     public Smok() {
-        this.punktyZycia = 1000;
+        super(1000);
     }
 
-    public int getPunktyZycia() {
-        return punktyZycia;
-    }
-
+    @Override
     public void atakuj(Postac przeciwnik) {
+        przeciwnik.otrzymajObrazenia(100);
     }
 }
+
+
